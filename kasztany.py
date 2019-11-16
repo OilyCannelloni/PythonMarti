@@ -1,4 +1,4 @@
-worek = [int(i) for i in input().split(" ")]
+worek = map(int, input().split(" "))
 
 suma_nieparz = 0
 suma_parz = 0
