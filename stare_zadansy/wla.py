@@ -1,0 +1,1 @@
+print(-int(input()) + max(l := list(map(int, input().split()))) - min(l) + 1)
