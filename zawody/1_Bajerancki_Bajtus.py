@@ -49,8 +49,8 @@ for tangent in tangents:
     if hits > max_hits:
         max_hits = hits
 
-total_hits = covering + max_hits * bullets
-print(covering, starting, max_hits)
+total_hits = (covering + max_hits) * bullets
+
 if total_hits >= goal:
     print(total_hits)
 else:
