@@ -1,6 +1,7 @@
 from math import sqrt, atan, pi
 from functools import cmp_to_key
 
+eps = 2.23e-16
 
 def get_tangents(x, y, r):
     alpha = pi/2 if x == 0 else atan(y/x)
@@ -11,7 +12,7 @@ def get_tangents(x, y, r):
 
 
 def compare_tangents(t1, t2):
-    if t1[0] != t2[0]:
+    if abs(t1[0] - t2[0]) > eps:
         return t1[0] - t2[0]
     return -1 if t1[1] == 1 else 1
 
