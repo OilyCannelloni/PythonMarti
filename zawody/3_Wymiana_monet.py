@@ -1,29 +1,3 @@
-"""
-PLAN:
-1. Wczytanie danych
-2. Sortowanie wartości monet
-3. Dajemy jeden największy i sprawdzamy co dostaniemy
-4. Dajemy 2 najw. ...
-5. Dajemy 3 najw ...
-...
-N. Dajemy wszystkko ...
-N + 1: print(startowe + zysk)
-"""
-
-"""
-Nasze: 12 11 5 1
-
-Jego: 6 7 7 8 11
-
-dajemy 1 -> dostajemy 1, zysk 0
-dajemy 2 -> dostajemy 3 zysk 1
-
-zysk = max(0, 1, 1, 0)
-
-print(startowe + zysk)
-"""
-
-
 liczba_naszych, liczba_jego = list(map(int, input().split()))
 
 nasze = list(map(int, input().split()))
@@ -35,7 +9,6 @@ jego.sort()
 nasze = nasze[::-1]
 
 zyski = []
-
 nasza_suma = 0
 for k in range(liczba_naszych):
     nasza_suma += nasze[k]
